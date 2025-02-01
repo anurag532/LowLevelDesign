@@ -30,7 +30,7 @@ public class EntryGate implements Terminal{
         return this.entryGateId;
     }
     public ParkingSpot findParkingSpot(){
-        try{parkingSpotController.findParkingSpot();}
+        try{return parkingSpotController.findParkingSpot();}
         catch ( ParkingSpotNotFoundException e){
             throw new RuntimeException(e);
         }
